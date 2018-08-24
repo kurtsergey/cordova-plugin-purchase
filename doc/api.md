@@ -346,6 +346,7 @@ Products object have the following fields and methods.
  - `product.description` - Localized longer description
  - `product.priceMicros` - Localized price, in micro-units. Available only on Android
  - `product.price` - Localized price, with currency symbol
+ - `product.priceValue` - Price value as number
  - `product.currency` - Currency code (optionaly)
  - `product.loaded` - Product has been loaded from server, however it can still be either `valid` or not
  - `product.valid` - Product has been loaded and is a valid product

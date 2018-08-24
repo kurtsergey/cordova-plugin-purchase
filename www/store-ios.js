@@ -2811,6 +2811,7 @@ function storekitLoaded(validProducts, invalidProductIds) {
         p.set({
             title: validProducts[i].title,
             price: validProducts[i].price,
+            priceValue: validProducts[i].priceValue,
             description: validProducts[i].description,
             currency: validProducts[i].currency,
             state: store.VALID

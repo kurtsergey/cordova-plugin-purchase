@@ -848,6 +848,7 @@ static NSString *jsErrorCodeAsString(NSInteger code) {
                 NILABLE(product.localizedTitle),       @"title",
                 NILABLE(product.localizedDescription), @"description",
                 NILABLE(product.localizedPrice),       @"price",
+                NILABLE(product.price),                @"priceValue",
                 NILABLE(currencyCode),                 @"currency",
                 nil]];
         [self.plugin.products setObject:product forKey:[NSString stringWithFormat:@"%@", product.productIdentifier]];
