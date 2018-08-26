@@ -2814,6 +2814,7 @@ function storekitLoaded(validProducts, invalidProductIds) {
             priceValue: validProducts[i].priceValue,
             description: validProducts[i].description,
             currency: validProducts[i].currency,
+            countryCode: validProducts[i].countryCode,
             state: store.VALID
         });
         p.trigger("loaded");

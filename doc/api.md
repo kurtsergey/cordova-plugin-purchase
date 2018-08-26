@@ -348,6 +348,7 @@ Products object have the following fields and methods.
  - `product.price` - Localized price, with currency symbol
  - `product.priceValue` - Price value as number
  - `product.currency` - Currency code (optionaly)
+ - `product.countryCode` - Country code. Available only on iOS
  - `product.loaded` - Product has been loaded from server, however it can still be either `valid` or not
  - `product.valid` - Product has been loaded and is a valid product
  - `product.canPurchase` - Product is in a state where it can be purchased

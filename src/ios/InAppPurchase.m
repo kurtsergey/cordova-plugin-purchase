@@ -840,6 +840,7 @@ static NSString *jsErrorCodeAsString(NSInteger code) {
         [numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
         [numberFormatter setLocale:product.priceLocale];
         NSString *currencyCode = [numberFormatter currencyCode];
+        NSString *countryCode = [product.priceLocale objectForKey: NSLocaleCountryCode];
         
         DLog(@"BatchProductsRequestDelegate.productsRequest:didReceiveResponse:  - %@: %@", product.productIdentifier, product.localizedTitle);
         [validProducts addObject:
@@ -850,6 +851,7 @@ static NSString *jsErrorCodeAsString(NSInteger code) {
                 NILABLE(product.localizedPrice),       @"price",
                 NILABLE(product.price),                @"priceValue",
                 NILABLE(currencyCode),                 @"currency",
+                NILABLE(countryCode),                  @"countryCode",
                 nil]];
         [self.plugin.products setObject:product forKey:[NSString stringWithFormat:@"%@", product.productIdentifier]];
     }
